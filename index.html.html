@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine?</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: rgb(9, 46, 23);
+            color: rgb(127, 231, 153);
+            font-size: x-small;
+        }
+        h2
+        {
+            color: rgb(48, 196, 104);
+        }
+        .container {
+            margin-top: 100px;
+        }
+        .btn {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 10px;
+        }
+        .yes {
+            background-color: darkred;
+            color: white;
+        }
+        .no {
+            background-color: white;
+            color: darkred;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dear Lawyer Boy, are you a case law? because I can’t stop citing you in my heart.❤️</h1>
+        <h2>Will you be my valentine? </h2>
+        <button class="btn yes" onclick="window.location.href='yes.html'">Yes</button>
+        <button class="btn no" onmouseover="moveNo()">No :(</button>
+    </div>
+    <script>
+        function moveNo() {
+            let x = Math.random() * (window.innerWidth - 100);
+            let y = Math.random() * (window.innerHeight - 50);
+            document.querySelector(".no").style.left = x + "px";
+            document.querySelector(".no").style.top = y + "px";
+        }
+    </script>
+</body>
+</html>
